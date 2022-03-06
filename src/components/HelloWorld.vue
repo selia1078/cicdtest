@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <h1>这是selia的软工作业week1</h1>
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -77,6 +78,17 @@
           target="_blank"
         >
           awesome-vue
+        </a>
+      </li>
+    </ul>
+    <h2>悄咪咪放一个博客</h2>
+    <ul>
+      <li>
+        <a
+          href="https://fyhssgss.github.io/"
+          target="_blank"
+        >
+          我不说是谁, 但是你们都知道:)
         </a>
       </li>
     </ul>
