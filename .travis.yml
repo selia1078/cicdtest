@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - "8"
+
+install:
+  - npm install
+
+script:
+  - npm run build
+
+after_success:
+  - cd ./dist
+  - git init
+  - git config --global user.name "selia1078"
+  - git config --global user.email "871353109@qq.com"
+  - git add .
+  - git commit -m "Automatically update from travis-ci"
+  - git push --quiet --force  "https://selia1078.github.io/cicdtest" master:${gh_pages2}
+
+branches:
+  only:
+    - master
